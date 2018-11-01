@@ -4,7 +4,7 @@
 Created by Paulino Rocha e Silva on 2017-05-23.
 Copyright (c) 2017 neoplace. All rights reserved.
 
-Testes para envio de mensagens pelo Twillio
+Script para envio de mensagens pelo Twillio
 """
 import sys
 #adicionando o diretorio em runtime
@@ -55,17 +55,7 @@ def mensagem(*args):
 
 	envia_sms(lista_telefones, msg_sms)
 
-
 def main():
-	#message = client.messages.create(to="+5541992099962", from_="+12077473005", body="teste Python local!")
-	# print("This is the name of the script: ", sys.argv[0])
-	# print( "Number of arguments: ", len(sys.argv))
-	# print("The arguments are: " , str(sys.argv))
-	# print(type(sys.argv[1]))
-	# for i in range(len(sys.argv)):
-	# 	print(sys.argv[i])
-	# print(type(sys.argv))
-
 
 	if  len(sys.argv) < 3 :
 		print("\n")
@@ -73,9 +63,6 @@ def main():
 		print("Você pode colocar vários números antes da mensagem. Ex: python testesms.py +55419999999 'mensagem' \n")
 	else:
 		mensagem(sys.argv)
-
-
-
 
 if __name__=='__main__':
 	main()
