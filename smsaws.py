@@ -4,7 +4,7 @@
 Created by Paulino Rocha e Silva on 2017-05-23.
 Copyright (c) 2017 neoplace. All rights reserved.
 
-Testes para envio de mensagens pelo SNS - AWS
+Script para envio de mensagens pelo SNS - AWS
 """
 import sys
 # adicionando o diretorio em runtime
@@ -67,10 +67,6 @@ def main():
 		print("Você pode colocar vários números antes da mensagem. Ex: python smsaws.py +55419999999 'mensagem' \n")
 	else:
 		mensagem(sys.argv)
-
-
-	# print out the response
-	#print(response)
 
 if __name__ == '__main__':
 	main()
